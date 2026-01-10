@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <link rel="preload" as="image" href="/assets/images/appliances/hero-appliances.png?v=6" fetchpriority="high">
+    <link rel="preload" as="image" href="/assets/images/appliances/hero-appliances.webp?v=2" fetchpriority="high">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bosch Appliance Repair Service Of New York - Authorized</title>
     <meta name="description" content="Bosch Authorized Appliance Repair Serving Manhattan, Brooklyn, Queens & The Bronx. Washer, Dryer, Oven, Dishwasher, Microwave, Refrigerator, Cooktop Repair.">
@@ -246,7 +246,8 @@
         .hero {
             color: white; text-align: center; padding: 180px 20px 120px; margin-top: 80px;
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url('/assets/images/appliances/hero-appliances.png?v=6') center center/cover no-repeat;
+            url('/assets/images/appliances/hero-appliances.webp?v=2') center center/cover no-repeat;
+            background-attachment: scroll;
             min-height: 70vh; display: flex; align-items: center; justify-content: center;
         }
         .hero h1 { font-size: 52px; margin-bottom: 16px; text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.9); color: white; }
@@ -281,23 +282,11 @@
         }
         .service:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); }
         .service-image {
-            width: 100%;
-            height: 200px;
-            background: transparent;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            padding: 10px;
-            box-sizing: border-box;
+            width: 100%; height: 160px; background: #fff;
+            border-radius: 10px; margin-bottom: 15px; display: flex; align-items: center;
+            justify-content: center; overflow: hidden;
         }
-        .service-image img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
+        .service-image img { max-width: 100%; max-height: 100%; object-fit: contain; }
         .learn-more-btn {
             display: flex; flex-direction: column; align-items: center; justify-content: center;
             background: linear-gradient(135deg, var(--blue) 0%, #2d2d4a 100%); color: white;
@@ -636,7 +625,7 @@
     <header>
         <div class="container nav-wrapper">
             <a href="/" class="logo-link" aria-label="Return to Bosch Appliance Repair NYC Homepage">
-                <img src="/assets/images/bosch-logo.png?v=2" alt="Bosch Appliance Repair NYC" title="Bosch Appliance Repair NYC" height="45" style="height: 45px; width: auto;">
+                <img src="/assets/images/bosch-logo.png?v=2" alt="Bosch Appliance Repair NYC" title="Bosch Appliance Repair NYC" width="80" height="45" style="height: 45px; width: auto;">
             </a>
             <div class="nav-right">
                 <div class="services-menu" id="servicesMenu">
@@ -654,10 +643,10 @@
                         
                         <li class="submenu-toggle" id="serviceAreasToggle">Service Areas</li>
                         <div class="service-areas-submenu" id="serviceAreasSubmenu">
-                            <li><a href="#sa-service-areas" class="scroll-link">Manhattan</a></li>
-                            <li><a href="#sa-service-areas" class="scroll-link">Brooklyn</a></li>
-                            <li><a href="#sa-service-areas" class="scroll-link">Queens</a></li>
-                            <li><a href="#sa-service-areas" class="scroll-link">Bronx</a></li>
+                            <li><a href="#borough-manhattan" class="scroll-link">Manhattan</a></li>
+                            <li><a href="#borough-brooklyn" class="scroll-link">Brooklyn</a></li>
+                            <li><a href="#borough-queens" class="scroll-link">Queens</a></li>
+                            <li><a href="#borough-bronx" class="scroll-link">Bronx</a></li>
                         </div>
                     </ul>
                 </div>
@@ -682,7 +671,7 @@
             <div class="services-grid">
                 <!-- Bosch OVEN REPAIR -->
                 <div class="service" id="bosch-oven-repair">
-                    <div class="service-image"><img src="/assets/images/appliances/oven.webp?v=2" alt="Bosch Oven Repair NYC" loading="lazy"></div>
+                    <div class="service-image"><img src="/assets/images/appliances/oven.webp?v=2" alt="Bosch Oven Repair NYC" width="304" height="304" loading="lazy"></div>
                     <a href="#" class="learn-more-btn" onclick="toggleService(this); return false;">Bosch Oven Repair <span>Learn More</span></a>
                     <div class="service-types">
                         <h3>Oven Models We Service:</h3>
@@ -728,7 +717,7 @@
                 </div>
                 <!-- Bosch COOKTOP REPAIR -->
                 <div class="service" id="bosch-cooktop-repair">
-                    <div class="service-image"><img src="/assets/images/appliances/cooktop.webp?v=2" alt="Bosch Cooktop Repair NYC" loading="lazy"></div>
+                    <div class="service-image"><img src="/assets/images/appliances/cooktop.webp?v=2" alt="Bosch Cooktop Repair NYC" width="304" height="304" loading="lazy"></div>
                     <a href="#" class="learn-more-btn" onclick="toggleService(this); return false;">Bosch Cooktop Repair <span>Learn More</span></a>
                     <div class="service-types">
                         <h3>Cooktop Models We Service:</h3>
@@ -774,7 +763,7 @@
                 </div>
                 <!-- Bosch MICROWAVE REPAIR -->
                 <div class="service" id="bosch-microwave-repair">
-                    <div class="service-image"><img src="/assets/images/appliances/microwave.webp?v=2" alt="Bosch Microwave Repair NYC" loading="lazy"></div>
+                    <div class="service-image"><img src="/assets/images/appliances/microwave.webp?v=2" alt="Bosch Microwave Repair NYC" width="304" height="304" loading="lazy"></div>
                     <a href="#" class="learn-more-btn" onclick="toggleService(this); return false;">Bosch Microwave Repair <span>Learn More</span></a>
                     <div class="service-types">
                         <h3>Microwave Models We Service:</h3>
@@ -820,7 +809,7 @@
                 </div>
                 <!-- Bosch REFRIGERATOR REPAIR -->
                 <div class="service" id="bosch-refrigerator-repair">
-                    <div class="service-image"><img src="/assets/images/appliances/refrigerator.webp?v=2" alt="Bosch Refrigerator Repair NYC" loading="lazy"></div>
+                    <div class="service-image"><img src="/assets/images/appliances/refrigerator.webp?v=2" alt="Bosch Refrigerator Repair NYC" width="210" height="304" loading="lazy"></div>
                     <a href="#" class="learn-more-btn" onclick="toggleService(this); return false;">Bosch Refrigerator Repair <span>Learn More</span></a>
                     <div class="service-types">
                         <h3>Refrigerator Models We Service:</h3>
@@ -866,7 +855,7 @@
                 </div>
                 <!-- Bosch DRYER REPAIR -->
                 <div class="service" id="bosch-dryer-repair">
-                    <div class="service-image"><img src="/assets/images/appliances/dryer.webp?v=2" alt="Bosch Dryer Repair NYC" loading="lazy"></div>
+                    <div class="service-image"><img src="/assets/images/appliances/dryer.webp?v=2" alt="Bosch Dryer Repair NYC" width="304" height="304" loading="lazy"></div>
                     <a href="#" class="learn-more-btn" onclick="toggleService(this); return false;">Bosch Dryer Repair <span>Learn More</span></a>
                     <div class="service-types">
                         <h3>Dryer Models We Service:</h3>
@@ -912,7 +901,7 @@
                 </div>
                 <!-- Bosch WASHER REPAIR -->
                 <div class="service" id="bosch-washer-repair">
-                    <div class="service-image"><img src="/assets/images/appliances/washer.webp?v=2" alt="Bosch Washer Repair NYC" loading="lazy"></div>
+                    <div class="service-image"><img src="/assets/images/appliances/washer.webp?v=2" alt="Bosch Washer Repair NYC" width="252" height="350" loading="lazy"></div>
                     <a href="#" class="learn-more-btn" onclick="toggleService(this); return false;">Bosch Washer Repair <span>Learn More</span></a>
                     <div class="service-types">
                         <h3>Washer Models We Service:</h3>
@@ -958,7 +947,7 @@
                 </div>
                 <!-- Bosch DISHWASHER REPAIR -->
                 <div class="service" id="bosch-dishwasher-repair">
-                    <div class="service-image"><img src="/assets/images/appliances/dishwasher.webp?v=2" alt="Bosch Dishwasher Repair NYC" loading="lazy"></div>
+                    <div class="service-image"><img src="/assets/images/appliances/dishwasher.webp?v=2" alt="Bosch Dishwasher Repair NYC" width="291" height="304" loading="lazy"></div>
                     <a href="#" class="learn-more-btn" onclick="toggleService(this); return false;">Bosch Dishwasher Repair <span>Learn More</span></a>
                     <div class="service-types">
                         <h3>Dishwasher Models We Service:</h3>
@@ -1004,7 +993,7 @@
                 </div>
                 <!-- Bosch WINE COOLER REPAIR -->
                 <div class="service" id="bosch-wine-cooler-repair">
-                    <div class="service-image"><img src="/assets/images/appliances/wine-cooler.webp?v=2" alt="Bosch Wine Cooler Repair NYC" loading="lazy"></div>
+                    <div class="service-image"><img src="/assets/images/appliances/wine-cooler.webp?v=2" alt="Bosch Wine Cooler Repair NYC" width="204" height="247" loading="lazy"></div>
                     <a href="#" class="learn-more-btn" onclick="toggleService(this); return false;">Bosch Wine Cooler Repair <span>Learn More</span></a>
                     <div class="service-types">
                         <h3>Wine Cooler Models We Service:</h3>
@@ -1128,7 +1117,7 @@
                 <h2>New York City Service Areas</h2>
                 <p>Proudly Serving 4 Boroughs with Same-Day Bosch Appliance Repair</p>
                 <div class="borough-cards-grid">
-                    <div class="borough-card">
+                    <div class="borough-card" id="borough-manhattan">
                         <div class="pin-icon">
                             <svg viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z" fill="#c41e3a"/>
@@ -1139,7 +1128,7 @@
                         <p>Serving All Manhattan Neighborhoods</p>
                         <a href="https://www.google.com/maps/place/Manhattan,+New+York,+NY" target="_blank" rel="noopener" class="map-btn">View on Google Maps →</a>
                     </div>
-                    <div class="borough-card">
+                    <div class="borough-card" id="borough-brooklyn">
                         <div class="pin-icon">
                             <svg viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z" fill="#c41e3a"/>
@@ -1150,7 +1139,7 @@
                         <p>Serving All Brooklyn Neighborhoods</p>
                         <a href="https://www.google.com/maps/place/Brooklyn,+New+York,+NY" target="_blank" rel="noopener" class="map-btn">View on Google Maps →</a>
                     </div>
-                    <div class="borough-card">
+                    <div class="borough-card" id="borough-queens">
                         <div class="pin-icon">
                             <svg viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z" fill="#c41e3a"/>
@@ -1161,7 +1150,7 @@
                         <p>Serving All Queens Neighborhoods</p>
                         <a href="https://www.google.com/maps/place/Queens,+New+York,+NY" target="_blank" rel="noopener" class="map-btn">View on Google Maps →</a>
                     </div>
-                    <div class="borough-card">
+                    <div class="borough-card" id="borough-bronx">
                         <div class="pin-icon">
                             <svg viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z" fill="#c41e3a"/>
