@@ -48,7 +48,7 @@
     </script>
     <style>
         :root {
-            --blue: #1a1a2e;
+            --blue: #003087;
             --red: #c41e3a;
             --gray: #f8f9fa;
         }
@@ -75,8 +75,8 @@
             z-index: 1000;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .logo-link { display: inline-flex; flex-direction: column; align-items: flex-start; text-decoration: none; }
-        .logo-link img { height: 40px; width: auto; }
+        .logo-link { display: inline-flex; align-items: center; text-decoration: none; }
+        .logo-link img { height: 45px; width: auto; }
         .logo-link:hover { opacity: 0.9; }
         .nav-wrapper { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
         .nav-right { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
@@ -623,9 +623,8 @@
 <body>
     <header>
         <div class="container nav-wrapper">
-            <a href="/" class="logo-link" aria-label="Return to Bosch Appliance Repair NYC Homepage" style="color: white; text-decoration: none; line-height: 1.2;">
-                <span style="display: block; font-size: 26px; font-weight: 700; font-family: Georgia, 'Times New Roman', serif;">Bosch</span>
-                <span style="display: block; font-size: 11px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin-top: 2px;">APPLIANCE REPAIR NYC</span>
+            <a href="/" class="logo-link" aria-label="Return to Bosch Appliance Repair NYC Homepage">
+                <img src="/assets/images/bosch-logo.png?v=2" alt="Bosch Appliance Repair NYC" title="Bosch Appliance Repair NYC" height="45" style="height: 45px; width: auto;">
             </a>
             <div class="nav-right">
                 <div class="services-menu" id="servicesMenu">
